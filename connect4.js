@@ -41,6 +41,10 @@ class Game {
   makeHtmlBoard() {
     const board = document.getElementById('board');
 
+    // make table header with game start button
+    // add event listener to start button
+    // when click, trigger new game - run makeBoard(); + enable play click
+
     // make column tops (clickable area for adding a piece to that column)
     const top = document.createElement('tr');
     top.setAttribute('id', 'column-top');
