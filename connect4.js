@@ -17,9 +17,13 @@ class Game {
     this.width = width;
     this.board = [];
     this.currPlayer = 1; // active player: 1 or 2
+    //initializing boards;
+    //code review: can just call functions, don't need to actually create this.makeBoard and this.makeHtmlBoard
+    this.makeBoard();
+    this.makeHtmlBoard();
     // added properties into constructor to initialize boards
-    this.makeBoard = this.makeBoard();
-    this.makeHtmlBoard = this.makeHtmlBoard();
+    //this.makeBoard = this.makeBoard(); 
+    //this.makeHtmlBoard = this.makeHtmlBoard();
   }
 
   /** makeBoard: create in-JS board structure:
